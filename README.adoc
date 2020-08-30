@@ -1,6 +1,8 @@
 == K.K. Slider
 
-image:https://user-images.githubusercontent.com/315229/91666207-e3059300-eaf2-11ea-8e2e-00011f7fe205.png[K.K. Slider]
+++++
+<img align="right" src="https://user-images.githubusercontent.com/315229/91666207-e3059300-eaf2-11ea-8e2e-00011f7fe205.png" alt="K.K. Slider, from Animal Crossing">
+++++
 
 An extremely simple slide show plugin for Neovim. The only reason it's restricted to Neovim is because it's built with https://github.com/Olical/aniseed[Aniseed] which is also only supported in Neovim.
 
