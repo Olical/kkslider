@@ -1,0 +1,31 @@
+== K.K. Slider
+
+An extremely simple slide show plugin for Neovim. The only reason it's restricted to Neovim is because it's built with https://github.com/Olical/aniseed[Aniseed] which is also only supported in Neovim.
+
+It takes a single AsciiDoc file as input and splits it up into individual slides for each top level heading (a line beginning with a single `=`).
+
+[source,viml]
+----
+:KKSlider my-slides.adoc
+----
+
+Once opened you can use `<left>` and `<right>` to navigate through the slides.
+
+== Installation
+
+Use your favourite plugin manager, mine is https://github.com/junegunn/vim-plug[vim-plug] but any will do.
+
+[source,viml]
+----
+Plug 'Olical/kkslider'
+----
+
+== Unlicenced
+
+Find the full http://unlicense.org/[unlicense] in the `UNLICENSE` file, but here's a snippet.
+
+____
+This is free and unencumbered software released into the public domain.
+
+Anyone is free to copy, modify, publish, use, compile, sell, or distribute this software, either in source code form or as a compiled binary, for any purpose, commercial or non-commercial, and by any means.
+____
