@@ -95,7 +95,7 @@ do
       local current = nil
       local acc = {}
       local function _3_(line)
-        if line:find("^= %w") then
+        if line:find("^= ") then
           if current then
             table.insert(acc, current)
           end
@@ -106,6 +106,7 @@ do
         end
       end
       a["run!"](_3_, str.split(src, "\n"))
+      table.insert(acc, current)
       return acc
     end
     v_0_0 = parse_slides0
