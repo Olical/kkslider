@@ -6,6 +6,8 @@
 
 An extremely simple slide show plugin for Neovim. The only reason it's restricted to Neovim is because it's built with https://github.com/Olical/aniseed[Aniseed] which is also only supported in Neovim.
 
+https://asciinema.org/a/WvcJvQIIClveW2RZNNYcXzcHm[image:https://asciinema.org/a/WvcJvQIIClveW2RZNNYcXzcHm.svg[asciicast]]
+
 It takes a single AsciiDoc file as input and splits it up into individual slides for each top level heading (a line beginning with a single `=`).
 
 [source,viml]
