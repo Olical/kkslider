@@ -28,13 +28,14 @@
   (var acc [])
   (a.run!
     (fn [line]
-      (if (line:find "^= %w")
+      (if (line:find "^= ")
         (do
           (when current
             (table.insert acc current))
           (set current [line]))
         (table.insert current line)))
     (str.split src "\n"))
+  (table.insert acc current)
   acc)
 
 (defn update-slide [f]
